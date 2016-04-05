@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/info_window_background"
+    android:id="@+id/LinLay_infoWindow"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_infoImageWrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<ImageView-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:maxWidth="280dp"-->
+            <!--android:maxHeight="210dp"-->
+            <!--android:id="@+id/markerImage"-->
+            <!--android:layout_margin="3dp"-->
+            <!--android:src="@drawable/ic_launcher"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--/>-->
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/markerImage"
+            android:layout_margin="3dp"
+            android:src="@drawable/no_image"
+            />
+
+        <ImageView
+            android:id="@+id/markerWatermark"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/zoom_wm"
+            android:layout_alignBaseline="@id/markerImage"
+            android:layout_alignLeft="@id/markerImage"
+            android:baselineAlignBottom="true"
+            android:layout_alignBottom="@id/markerImage"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_infoProgressWrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/infoProgress"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignBottom="@+id/infoProgress"
+            android:textStyle="bold"
+            android:textColor="@color/teal_base"
+            android:text="@string/image_download_notice"/>
+
+        <!--
+            android:layout_alignBottom="@+id/infoProgress"-->
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/info_window_background"-->
+    <!--android:id="@+id/LinLay_infoWindow"-->
+    <!-->-->
+
+    <!--<ImageView-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:maxWidth="280dp"-->
+    <!--android:maxHeight="210dp"-->
+    <!--android:id="@+id/markerImage"-->
+    <!--android:layout_margin="3dp"-->
+    <!--android:src="@drawable/infowin_img"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--/>-->
+
+    <!-- -->
+
+    <!--</LinearLayout>-->

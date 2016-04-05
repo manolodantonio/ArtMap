@@ -1,0 +1,335 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.artmap.manzo.artmap.UserProfileActivity"
+    android:background="@color/bg_silver">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/ll_userprofile_topbar"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_base">
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_userBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibt_backsign_photo"
+                android:background="@drawable/back_sign"/>
+
+            <ImageButton
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgbtn_logo_photo"
+                android:background="@drawable/artmap_icon"/>
+
+            <TextView
+                android:clickable="false"
+                android:id="@+id/tv_top_back_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="@string/title_activity_user_profile"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_user_datawrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_userprofile_topbar">
+
+        <RelativeLayout
+        android:padding="8dp"
+        android:id="@+id/rl_userpage_statwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ll_username_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/bg_white">
+
+
+
+                <TextView
+                    android:id="@+id/tv_userpage_score_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/tv_scoretotal_title"/>
+
+                <TextView
+                    android:id="@+id/tv_userpage_scoretotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/tv_userpage_score_title"
+                    android:textSize="24sp"
+                    android:textColor="@color/yellow_score"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="@string/tv_zero"/>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_scoretitle_divider"
+                    android:orientation="vertical"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:minHeight="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/tv_userpage_score_title"
+                    android:background="#ff828282"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_userpage_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/ll_scoretitle_divider"
+                    android:layout_centerVertical="true"
+
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/teal_base"
+                    android:textAllCaps="true"
+                    android:text="@string/tv_username"/>
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_userstats_wrap"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:layout_below="@+id/ll_username_wrap">
+
+                <!--CheckIns-->
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_userpage_checkin"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="#ff545454"
+                        android:layout_weight="0.7"
+                        android:text="@string/tv_checkin"/>
+
+                    <TextView
+                        android:id="@+id/tv_checknumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="#ff009688"
+                        android:gravity="start"
+                        android:layout_weight="0.3"
+                        android:text="@string/tv_zero"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#ff828282"></LinearLayout>
+
+                <!--Photos-->
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_userpage_photopublished"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="#ff545454"
+                        android:layout_weight="0.7"
+                        android:text="@string/tv_fotopubblicate"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_photonumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="#ff009688"
+                        android:gravity="start"
+                        android:layout_weight="0.3"
+                        android:textAllCaps="true"
+                        android:text="@string/tv_zero"/>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#ff828282"></LinearLayout>
+
+
+
+
+
+                <!--Votes-->
+
+                <!--<LinearLayout-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="16dp">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_userpage_votes"-->
+                        <!--android:layout_width="120dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:textColor="#ff545454"-->
+                        <!--android:layout_weight="0.7"-->
+                        <!--android:text="@string/tv_voti"/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_votenumber"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="16dp"-->
+                        <!--android:textColor="#ff009688"-->
+                        <!--android:gravity="start"-->
+                        <!--android:layout_weight="0.3"-->
+                        <!--android:text="@string/tv_zero"/>-->
+                <!--</LinearLayout>-->
+
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:background="#ff828282"></LinearLayout>-->
+
+
+                <!--Reports-->
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_userpage_reports"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/text_darkgrey"
+                        android:layout_weight="0.7"
+                        android:text="@string/tv_segnalazioni"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_reportnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/teal_base"
+                        android:gravity="start"
+                        android:layout_weight="0.3"
+                        android:text="@string/tv_zero"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_user_logout"
+        android:layout_alignParentBottom="true"
+        android:text="Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="?android:textAppearanceSmall"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="#ffff"
+        android:background="@color/teal_base" />
+
+
+
+
+</RelativeLayout>

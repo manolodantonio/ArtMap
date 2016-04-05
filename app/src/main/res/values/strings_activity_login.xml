@@ -1,0 +1,59 @@
+<resources>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (5-12 caratteri)</string>
+    <string name="prompt_pass_check">Confirm password</string>
+
+    <string name="dialog_pass_explain">Enter a password to complete the registration:</string>
+
+    <string name="tv_register_text">To register complete the following fields:</string>
+    <string name="tv_disclaimer">ArtMapWorld is committed to maintaining your privacy. Click to read the disclosure.</string>
+
+
+
+    <string name="action_sign_in">Login or register</string>
+    <string name="action_register">Registration</string>
+    <string name="action_login">Login</string>
+    <string name="action_back">Back</string>
+    <string name="action_send">Send</string>
+    <string name="action_send_hd">Send HD file</string>
+    <string name="action_ok">Ok</string>
+
+
+    <string name="error_invalid_email">Incorrect Email</string>
+    <string name="error_used_email">Email already in use. Please login or change it.</string>
+    <string name="error_invalid_password">Password too short</string>
+    <string name="error_insert_password">Insert password</string>
+    <string name="error_insert_username">Insert username</string>
+    <string name="error_incorrect_password">Wrong Password</string>
+    <string name="error_field_required">Required field</string>
+    <string name="error_field_different">Passwords do not match</string>
+    <string name="error_username_hint">Username already in use. Here\'s a tip!</string>
+    <string name="error_credentials">Email or password incorrect. Enter them again or Register</string>
+    <string name="error_connection">Connection error: Activate your Internet connection</string>
+    <string name="error_connection_update">Update error: Activate your Internet connection</string>
+
+    <string name="toast_logout">Logout</string>
+    <string name="toast_logininterrupted">Login Interrupted</string>
+    <string name="toast_connectionerror">Connection error</string>
+    <string name="toast_loggedin">Login performed!</string>
+    <string name="toast_registered">Successful registration!</string>
+
+    <string name="btn_fbsignin">Facebook Login</string>
+
+    <string name="disclaimer_text">
+            ArtMapWorld! does not intend in any way to contribute to the growing phenomenon of spam on the Internet.
+            We inform you that your data will not in any event disclosed in the network or transferred to third parties, with the exception of any legal requirements and technical needs related to the service.
+            The treatment is to provide the services requested and the compilation of statistics on the use of the same services. Neither will be aimed at sending promotional information, either in digital or paper format.
+            The treatment will be achieved with the help of information from the operators of ArtMapWord!.
+            Anytime you can ask for the verification, cancellation, modification of their data, or receive the list of processors, writing an email to artmapworld@gmail.com.
+            We respect all obligations under the Decree. 196/2003, also guarantee the utmost attention to data protection from fraudulent access and the immediate cancellation from our lists as a result of your request.
+
+            When you register you authorize the staff of ArtMapWorld! to publish and / or distribute, free of charge and with no time limits, images (photos and video) sent to the digital archives of ArtMapWorld through the application,
+            as well as authorize the preservation of photos and videos themselves to be stored on ArtMapWorld! digital archives and aknowledge that the purpose of such practices are purely informative.
+            ArtMapWorld does not intend in any way to undermine user\'s ability to maintain the intellectual property of their photos.
+    </string>
+</resources>

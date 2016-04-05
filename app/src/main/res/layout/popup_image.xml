@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:id="@+id/popup_layout">
+    
+    <ImageView
+        android:id="@+id/iv_popup_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_base"
+        android:paddingLeft="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/tv_photo_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/text_lightteal"
+            android:text="@string/tv_photoby"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/ic_exit_to_app_white_48dp"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/tv_photographer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/unknown"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+
+
+
+
+        <Button
+            android:id="@+id/btn_popup_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textStyle="bold"
+            android:layout_marginRight="1dp"
+            android:textColor="@color/white"
+            android:background="@color/teal_base"
+            android:text="@string/action_back"/>
+
+        <Button
+            android:id="@+id/btn_popup_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/teal_base"
+            android:text="@string/btn_card"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

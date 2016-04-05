@@ -1,0 +1,57 @@
+<resources>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (5-12 caratteri)</string>
+    <string name="prompt_pass_check">Conferma password</string>
+
+    <string name="dialog_pass_explain">Inserisci una password per completare la registrazione:</string>
+
+    <string name="tv_register_text">Per registrarti compila anche i seguenti campi:</string>
+    <string name="tv_disclaimer">ArtMap! si impegna a mantenere la tua privacy. Clicca per leggere l\'informativa.</string>
+
+    <string name="action_sign_in">Login or register</string>
+    <string name="action_register">Registrati</string>
+    <string name="action_login">Login</string>
+    <string name="action_back">Indietro</string>
+    <string name="action_send">Invia</string>
+    <string name="action_send_hd">Invia in HD</string>
+    <string name="action_ok">Ok</string>
+
+
+    <string name="error_invalid_email">Email non valida</string>
+    <string name="error_used_email">Email già registrata. Effettua il login o cambiala.</string>
+    <string name="error_invalid_password">Password troppo corta</string>
+    <string name="error_insert_password">Inserisci la password</string>
+    <string name="error_insert_username">Inserisci username</string>
+    <string name="error_incorrect_password">Password errata</string>
+    <string name="error_field_required">Campo richiesto</string>
+    <string name="error_field_different">Le password non corrispondono</string>
+    <string name="error_username_hint">Username già in uso. Ecco un suggerimento!</string>
+    <string name="error_credentials">Email o password errati. Inseriscili nuovamente o Registrati.</string>
+    <string name="error_connection">Errore di connessione: attiva la tua connessione a Internet</string>
+    <string name="error_connection_update">Errore durante l\'aggiornamento: attiva la tua connessione a Internet</string>
+
+    <string name="toast_logout">Logout</string>
+    <string name="toast_logininterrupted">Login Interrotto</string>
+    <string name="toast_connectionerror">Errore di connessione</string>
+    <string name="toast_loggedin">Login effettuato!</string>
+    <string name="toast_registered">Registrazione effettuata con successo!</string>
+
+    <string name="btn_fbsignin">Facebook Login</string>
+
+    <string name="disclaimer_text">
+            ArtMap! non vuole in alcun modo contribuire al dilagante fenomeno dello spamming su Internet.
+            A tal fine La informiamo che i Suoi dati non verranno in nessun caso diffusi in rete o ceduti a terzi, fatti salvi eventuali obblighi di legge e necessità tecniche legate all\'erogazione del servizio.
+            Il trattamento è finalizzato all\'erogazione dei servizi richiesti e all\'elaborazione di statistiche sull\'uso dei servizi stessi. Non è nè sarà finalizzato ad invio di informazioni promozionali, sia in formato digitale che cartaceo.
+            Il trattamento sarà realizzato con l\'ausilio di strumenti informatici da parte degli operatori di ArtMap!.
+            In qualsiasi momento sarà possibile richiedere gratuitamente la verifica, la cancellazione, la modifica dei propri dati, o ricevere l\'elenco degli incaricati del trattamento, scrivendo una mail a artmapworld@gmail.com.
+            Oltre a uniformarci a tutti gli obblighi previsti dal D.lgs. 196/2003, garantiamo inoltre la massima attenzione alla protezione dei dati da accessi fraudolenti ed alla cancellazione immediata dalle nostre liste a seguito di una Sua richiesta in tal senso.
+
+            Al momento della registrazione l\'Utente autorizza ArtMap! alla pubblicazione e/o diffusione tramite l\'applicazione ArtMap! delle proprie immagini (foto e video) inviate alla redazione di ArtMap! tramite l\'applicazione, a titolo gratuito e senza limiti di tempo,
+            nonché autorizza la conservazione delle foto e dei video stessi negli archivi informatici di ArtMap! e prende atto che la finalità di tali pubblicazioni sono meramente di carattere informativo e senza scopi di lucro.
+            ArtMap! non intende minare in alcun modo la capacità dell\'utente di mantenere la proprietà intellettuale delle proprie foto.
+    </string>
+</resources>

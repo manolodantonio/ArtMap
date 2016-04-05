@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="photo_step1">1 - Check your location</string>
+    <string name="photo_step2">2 - Take a picture of the street art</string>
+    <string name="photo_step3">3 - Ok? Ready to send!</string>
+
+    <string name="dialog_title">Additional information (optional)</string>
+    <string name="dialog_title_lowacc">Warning: low Accuracy</string>
+
+    <string name="dialog_txt_lowacc">Warning: your actual position is poorly or not detected. \n\n
+        Photos uploaded with a bad accuracy are taken less into account for the inclusion in the map. \n\n
+        If you can, please go back and wait until your position is better detected. Otherwise, feel free to continue anyway. </string>
+
+
+    <string name="photo_gettinposition">Detecting location …</string>
+    <string name="photo_hintposition">You better: activate GPS, WiFi and Internet</string>
+    <string name="photo_touchtoget">Tap to take a picture</string>
+    <string name="photo_sendingmessage">Sending photo, make sure your internet connection is active</string>
+
+    <string name="btn_photosend">Send your picture</string>
+
+    <string name="toast_nophoto">No picture to send</string>
+    <string name="toast_noposition">You can send photos only if your position is detected</string>
+    <string name="toast_nosendcauseinternet">Photo not sent. Check your internet connection</string>
+    <string name="toast_photoissent">Photo sent, now to be evaluated by the editors for inclusion. Thanks!</string>
+</resources>

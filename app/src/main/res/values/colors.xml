@@ -1,0 +1,24 @@
+<resources>
+
+
+    <color name="teal_flashy">#1de9b6</color>
+
+    <color name="teal_dark">#00695c</color>
+    <color name="teal_base">#ff009688</color>
+    <color name="text_lightteal">#80cbc4</color>
+    <color name="text_lighterteal">#b2dfdb</color>
+    <color name="text_anotherlightteal">#ffd2ffec</color>
+    <color name="bg_silver">#ffc6c6c6</color>
+    <color name="bg_silver_trasp">#e6c6c6c6</color>
+    <color name="bg_white">#ffebebeb</color>
+    <color name="white">#ffff</color>
+    <color name="transparent_white">#e6ffffff</color>
+    <color name="transparenter_white">#a5ffffff</color>
+    <color name="text_darkgrey">#ff545454</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="red_warning">#e64a19</color>
+    <color name="yellow_score">#ffa000</color>
+    <color name="lightblue_nav">#ff1976d2</color>
+
+</resources>

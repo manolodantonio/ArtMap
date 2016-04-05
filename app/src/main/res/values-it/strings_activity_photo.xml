@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="photo_step1">1 - Controlla la tua posizione</string>
+    <string name="photo_step2">2 - Fotografa la street art!</string>
+    <string name="photo_step3">3 - Ok? Allora puoi inviare!</string>
+
+    <string name="dialog_title">Ulteriori informazioni (opzionali)</string>
+
+    <string name="dialog_title_lowacc">Attenzione: bassa precisione.</string>
+
+    <string name="dialog_txt_lowacc">Attenzione: la tua posizione attuale è molto imprecisa o nulla. \n\n
+    Le foto caricate con una posizione imprecisa vengono prese meno in considerazione per l\'inserimento nella mappa. \n\n
+    Prova a tornare indietro e aspettare finché la tua posizione viene identificata meglio. Altrimenti, puoi comunque inviarla.</string>
+
+
+    <string name="photo_gettinposition">Rilevamento posizione in corso…</string>
+    <string name="photo_hintposition">Consiglio: attiva GPS, WiFi e Internet.</string>
+    <string name="photo_touchtoget">Tocca per fotografare</string>
+    <string name="photo_sendingmessage">Invio della foto in corso, assicurati che la connessione a internet sia attiva.</string>
+
+    <string name="btn_photosend">Invia la foto</string>
+
+    <string name="toast_nophoto">Nessuna foto da inviare</string>
+    <string name="toast_noposition">Puoi inviare la foto solo se la tua posizione è stata rilevata</string>
+    <string name="toast_nosendcauseinternet">Foto non inviata. Controlla la tua connessione a internet</string>
+    <string name="toast_photoissent">Foto inviata, ora verrà valutata dalla redazione per l\'inserimento. Grazie!</string>
+</resources>

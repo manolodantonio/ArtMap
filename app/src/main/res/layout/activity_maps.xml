@@ -1,0 +1,287 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_base">
+
+
+
+
+        <ImageButton
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtn_logo_login"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/artmap_icon"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/btn_photo"
+                    android:background="@drawable/camera"/>
+
+                <RelativeLayout
+                    android:id="@+id/ll_userButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/imgbtn_login"
+                        android:background="@drawable/user_icon"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_userScoreShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imgbtn_login"
+                        android:layout_alignRight="@+id/imgbtn_login"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/yellow_score"
+                        android:shadowColor="#000"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="1"
+                        android:gravity="center_vertical"
+                        android:text=""/>
+
+
+                    <TextView
+                        android:id="@+id/tv_userNameShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imgbtn_login"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="bold"
+                        android:textColor="#ffff"
+                        android:gravity="center_vertical"
+                        android:text=""/>
+
+                </RelativeLayout>
+
+        </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" >
+
+        <android.support.design.widget.FloatingActionButton
+            android:visibility="gone"
+            android:id="@+id/fab_checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:src="@drawable/ic_pin_drop"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            app:borderWidth="0dp"
+            android:layout_margin="8dp"
+            app:backgroundTint="@color/teal_flashy" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:visibility="gone"
+            android:id="@+id/fab_checkin_forbidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:src="@drawable/ic_pin_drop"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            app:borderWidth="0dp"
+            android:layout_margin="8dp"
+            app:backgroundTint="@color/bg_silver_trasp"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:visibility="gone"
+            android:id="@+id/fab_checkin_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:src="@drawable/ic_done"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            app:borderWidth="0dp"
+            android:layout_margin="8dp"
+            app:backgroundTint="@color/teal_base"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_admin_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_admin_access"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/bg_white"
+            android:background="@color/teal_base"
+            android:layout_gravity="bottom|center"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_admin"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|center">
+
+            <LinearLayout
+                android:id="@+id/ll_admin_button_wrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom|right">
+
+                <Button
+                    android:id="@+id/btn_admin_rotate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bg_white"
+                    android:background="@color/teal_base"
+                    android:layout_margin="1dp"
+                    android:text="Rotate"/>
+
+                <Button
+                    android:id="@+id/btn_admin_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bg_white"
+                    android:background="@color/teal_base"
+                    android:layout_margin="1dp"
+                    android:text="@string/action_ok"/>
+
+                <Button
+                    android:id="@+id/btn_admin_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bg_white"
+                    android:background="@color/teal_base"
+                    android:layout_margin="1dp"
+                    android:text="No"/>
+
+                <Button
+                    android:id="@+id/btn_admin_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bg_white"
+                    android:background="@color/teal_base"
+                    android:layout_margin="1dp"
+                    android:text="@string/action_back"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_admin_imageloading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bg_white"
+                android:background="@color/teal_base"
+                android:text="Loading Image.."/>
+
+            <ImageView
+                android:id="@+id/ib_admin_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="1dp"
+                android:layout_weight="1"
+                android:textColor="@color/text_lightteal"
+                android:background="@color/teal_base"
+                android:gravity="center"
+                android:adjustViewBounds="true"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_navigation_fabs"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom|end">
+
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_fabNav_wrap"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!-->-->
+            <android.support.design.widget.FloatingActionButton
+                app:fabSize="mini"
+                android:id="@+id/fab_navigate"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_directions"
+                app:backgroundTint="@color/lightblue_nav"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp"
+                app:borderWidth="0dp"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="0dp"
+                android:padding="0dp"
+                app:paddingStart="0dp"/>
+
+            <!--</LinearLayout>-->
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_mylocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_my_location"
+                app:elevation="6dp"
+                app:borderWidth="0dp"
+                android:layout_margin="8dp"
+                app:pressedTranslationZ="12dp"
+                app:backgroundTint="@color/transparent_white"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </fragment>
+
+</LinearLayout>

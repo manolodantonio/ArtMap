@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tv_username">USERNAME</string>
+
+    <string name="tv_fotopubblicate">Photos published: </string>
+    <string name="tv_checkin">Check-in performed: </string>
+    <string name="tv_voti">Ratings released: </string>
+    <string name="tv_segnalazioni">Reports accepted: </string>
+    <string name="tv_scoretotal_title">Score Total:</string>
+
+    <string name="tv_zero">0</string>
+
+
+
+</resources>

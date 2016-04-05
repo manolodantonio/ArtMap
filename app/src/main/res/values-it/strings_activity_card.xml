@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="card_author">Autore: </string>
+    <string name="card_title">Titolo: </string>
+    <string name="card_year">Anno di realizzazione: </string>
+    <string name="card_status">Stato attuale: </string>
+    <string name="card_position">La posizione dell\'opera sulla mappa è corretta?</string>
+    <string name="unknown">(Sconosciuto)</string>
+
+
+    <string name="card_sendreport">Invia Report</string>
+
+    <string name="report">Scheda inesatta? Invia un report</string>
+
+    <string name="html_name_share"><i>Autore: </i></string>
+
+    <string name="toast_reportsent">Report Inviato</string>
+    <string name="toast_shouldbenear">Devi avere una posizione con accuratezza Buona o più ed essere sul luogo dell\'opera per poter inviare il report.</string>
+
+
+    <string name="spnr_visible">Visible</string>
+    <string name="spnr_ruined">Rovinato o Inaccessibile</string>
+    <string name="spnr_destroyed">Rimosso o Distrutto</string>
+
+</resources>

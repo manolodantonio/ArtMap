@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_popup_title"
+        android:layout_marginBottom="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/teal_base"
+        android:background="@color/bg_white"
+        android:textAllCaps="true"
+        android:text="@string/dialog_title"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_admin_upload_status"
+        android:layout_marginBottom="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/teal_base"
+        android:background="@color/bg_white"
+        android:textAllCaps="true"
+        android:text="working.."/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_moreinfo_fields_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_report_title_static"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:padding="4dp"
+        android:background="@color/teal_base"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:text="@string/card_title"/>
+
+    <EditText android:id="@+id/et_moreinfo_title" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="@string/unknown"
+        android:inputType="text"
+        android:maxLines="1" android:singleLine="true"
+        android:textColor="@color/text_darkgrey"
+        android:textColorHint="@color/bg_silver"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_report_author_static"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:padding="4dp"
+        android:background="@color/teal_base"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:text="@string/card_author"/>
+
+    <EditText android:id="@+id/et_moreinfo_author" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="@string/unknown"
+        android:inputType="text"
+        android:maxLines="1" android:singleLine="true"
+        android:textColor="@color/text_darkgrey"
+        android:textColorHint="@color/bg_silver"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_report_year_static"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:padding="4dp"
+        android:background="@color/teal_base"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:text="@string/card_year"/>
+
+    <EditText android:id="@+id/et_moreinfo_year" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="@string/unknown"
+        android:inputType="number"
+        android:maxLength="4"
+        android:maxLines="1" android:singleLine="true"
+        android:textColor="@color/text_darkgrey"
+        android:textColorHint="@color/bg_silver"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_report_tag_static"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:padding="4dp"
+        android:background="@color/teal_base"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:text="Tag"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/et_moreinfo_tag" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="@string/unknown"
+        android:inputType="text"
+        android:maxLines="1" android:singleLine="true"
+        android:textColor="@color/text_darkgrey"
+        android:textColorHint="@color/bg_silver"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_report_send_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <Button
+        android:id="@+id/btn__moreinfo_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:layout_marginRight="2dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/teal_base"
+        android:text="@string/action_send"/>
+
+        <Button
+            android:id="@+id/btn__moreinfo_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/teal_base"
+            android:text="@string/action_send_hd"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn__moreinfo_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/teal_base"
+        android:text="@string/action_back"/>
+
+</LinearLayout>

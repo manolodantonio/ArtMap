@@ -1,0 +1,237 @@
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.artmap.manzo.artmap.PhotoActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/teal_base"
+        android:id="@+id/ll_topbar_wrap">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_photoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibt_backsign_photo"
+                android:background="@drawable/back_sign"/>
+
+            <ImageButton
+                android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgbtn_logo_photo"
+            android:background="@drawable/artmap_icon"/>
+
+            <TextView
+                android:clickable="false"
+                android:id="@+id/tv_top_back_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="@string/title_activity_photo"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_stepone_wrap"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_topbar_wrap">
+
+        <TextView
+            android:id="@+id/tv_step_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/photo_step1"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_base"
+            android:background="@color/bg_white"/>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:id="@+id/mapPhoto"
+            tools:context=".MapsActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <TextView
+            android:id="@+id/tv_current_accuracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/photo_gettinposition"
+            android:textStyle="bold"
+            android:textColor="#ffa1e5cd"
+            android:gravity="center"
+            android:background="@color/teal_base"/>
+
+        <TextView
+            android:id="@+id/tv_photo_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/photo_hintposition"
+            android:textStyle="bold"
+            android:textColor="#ffa1e5cd"
+            android:gravity="center"
+            android:background="@color/teal_base"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/ll_steptwo_wrap"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/ll_stepone_wrap">
+
+        <TextView
+            android:id="@+id/tv_step_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/photo_step2"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_base"
+            android:background="@color/bg_white"/>
+
+        <Button
+            android:id="@+id/ib_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/photo_touchtoget"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="@color/text_lightteal"
+            android:background="@color/teal_base"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_current_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="#ffa1e5cd"
+            android:background="@color/teal_base"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_stepthree_wrap"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_step_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/photo_step3"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_base"
+            android:background="@color/bg_white"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_photosend_button"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_upload_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/btn_photosend"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/teal_base"
+                />
+
+            <LinearLayout
+                android:id="@+id/pb_photosend_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:background="@color/teal_base"
+                android:minHeight="50dp">
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffa1e5cd"
+                    android:text="@string/photo_sendingmessage"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

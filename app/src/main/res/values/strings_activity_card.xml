@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="card_author">Author: </string>
+    <string name="card_title">Title: </string>
+    <string name="card_year">Year of realization: </string>
+    <string name="card_status">Current state: </string>
+    <string name="card_position">Is the location of the artwork on the map correct?</string>
+    <string name="unknown">(unknown)</string>
+
+    <string name="card_sendreport">Send Report</string>
+
+    <string name="report">Incorrect sheet? Send a report</string>
+
+    <string name="html_name_share"><i>Author: </i></string>
+
+    <string name="toast_reportsent">Report Sent</string>
+    <string name="toast_shouldbenear">You must have a location with Good accuracy or more and be in front of the artwork in order to send the report.</string>
+
+    <string name="spnr_visible">Visible</string>
+    <string name="spnr_ruined">Ruined or Inaccessible</string>
+    <string name="spnr_destroyed">Removed or Destroyed</string>
+
+</resources>

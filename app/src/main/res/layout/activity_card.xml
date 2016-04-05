@@ -1,0 +1,539 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.artmap.manzo.artmap.CardActivity">
+
+    <!--<LinearLayout-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:id="@+id/ll_card_topbar"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="start"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/top_bar_bg">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_cardback"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageButton-->
+                <!--android:clickable="false"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/ibt_backsign_photo"-->
+                <!--android:background="@drawable/back_sign"/>-->
+
+            <!--<ImageButton-->
+                <!--android:clickable="false"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/imgbtn_logo_photo"-->
+                <!--android:background="@drawable/artmap_icon"/>-->
+
+            <!--<TextView-->
+                <!--android:clickable="false"-->
+                <!--android:id="@+id/tv_top_back_card"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="#ffff"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:text="@string/title_activity_card"/>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <ScrollView
+
+        android:id="@+id/sv_card_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg_white">
+        <!--android:layout_below="@+id/ll_card_topbar">
+        android:padding="6dp"-->
+
+        <LinearLayout
+            android:id="@+id/ll_card_infowrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_card_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/no_image"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:id="@+id/iv_card_hdbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/hdtrasp_grey"/>
+
+                <ImageView
+                    android:id="@+id/iv_card_fullscreen"
+                    android:layout_width="wrap_content"
+                    android:clickable="false"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_open_full"/>
+
+                <ImageView
+                    android:id="@+id/iv_card_hdactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:src="@drawable/hdicon_on"/>
+
+            </RelativeLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_hdwrap"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="1dp"-->
+                <!--android:layout_marginBottom="1dp"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@color/teal_base">-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_gravity="center_vertical"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/white"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="20sp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textAllCaps="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="Scarica l'immagine in"/>&ndash;&gt;-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginTop="4dp"-->
+                    <!--android:layout_marginBottom="4dp"-->
+                    <!--android:layout_marginLeft="4dp"-->
+                    <!--android:adjustViewBounds="true"-->
+                    <!--android:src="@drawable/hdicon_on"/>-->
+
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/tv_card_title_static"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="4dp"
+                android:background="@color/teal_base"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="@string/card_title"/>
+
+                <TextView
+                    android:id="@+id/tv_card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="6dp"
+                    android:background="@color/white"
+                    android:textColor="@color/text_darkgrey"
+                    android:textAllCaps="true"
+                    android:text="@string/unknown"/>
+
+
+                     <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ff828282"></LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_card_author_static"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="4dp"
+                android:background="@color/teal_base"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="@string/card_author"/>
+
+                <TextView
+                    android:id="@+id/tv_card_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="6dp"
+                    android:background="@color/white"
+                    android:textColor="@color/text_darkgrey"
+                    android:textAllCaps="true"
+                    android:text="@string/unknown"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ff828282"></LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_card_year_static"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="4dp"
+                android:background="@color/teal_base"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="@string/card_year"/>
+
+                <TextView
+                    android:id="@+id/tv_card_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="6dp"
+                    android:background="@color/white"
+                    android:textColor="@color/text_darkgrey"
+                    android:textAllCaps="true"
+                    android:text="@string/unknown"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ff828282"></LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_card_status_static"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="4dp"
+                android:background="@color/teal_base"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="@string/card_status"/>
+
+                <TextView
+                    android:id="@+id/tv_card_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="6dp"
+                    android:background="@color/white"
+                    android:textColor="@color/text_darkgrey"
+                    android:textAllCaps="true"
+                    android:text="@string/unknown"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ff828282"></LinearLayout>
+
+            <Button
+                android:id="@+id/btn_card_begin_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:background="@color/teal_base"
+                android:text="@string/report"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/sv_report_wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_report_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:id="@+id/mapCard"
+                tools:context=".MapsActivity"
+                android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+            <TextView
+                android:id="@+id/tv_current_accuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/photo_gettinposition"
+                android:textStyle="bold"
+                android:textColor="@color/text_lighterteal"
+                android:background="@color/teal_base"/>
+
+            <TextView
+                android:id="@+id/tv_photo_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/photo_hintposition"
+                android:textStyle="bold"
+                android:textColor="@color/text_lighterteal"
+                android:background="@color/teal_base"/>
+
+
+            <TextView
+                android:id="@+id/tv_report_title_static"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="4dp"
+                android:background="@color/teal_base"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="@string/card_title"/>
+
+                <EditText android:id="@+id/et_report_title" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="@string/card_title"
+                    android:inputType="text"
+                    android:padding="4dp"
+                    android:maxLines="1" android:singleLine="true"
+                    android:textColor="@color/text_darkgrey"
+                    android:textColorHint="@color/bg_silver"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_report_author_static"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="4dp"
+                android:background="@color/teal_base"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="@string/card_author"/>
+
+                <EditText android:id="@+id/et_report_author" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="@string/card_author"
+                    android:inputType="text"
+                    android:padding="4dp"
+                    android:maxLines="1" android:singleLine="true"
+                    android:textColor="@color/text_darkgrey"
+                    android:textColorHint="@color/bg_silver"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_report_year_static"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="4dp"
+                android:background="@color/teal_base"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="@string/card_year"/>
+
+                <EditText android:id="@+id/et_report_year" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="@string/card_author"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="4dp"
+                    android:maxLines="1" android:singleLine="true"
+                    android:textColor="@color/text_darkgrey"
+                    android:textColorHint="@color/bg_silver"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_report_status_static"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="4dp"
+                android:background="@color/teal_base"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="@string/card_status"/>
+
+
+            <Spinner
+                android:id="@+id/spnr_report_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textColor="@color/text_darkgrey"
+                android:textColorHint="@color/text_lightteal"
+                android:scrollbarSize="24sp">
+                </Spinner>
+
+            <TextView
+                android:id="@+id/tv_report_position_static"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="4dp"
+                android:background="@color/teal_base"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:text="@string/card_position"/>
+
+            <RadioGroup
+                android:id="@+id/rgYesNo"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <RadioButton
+                    android:id="@+id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_darkgrey"
+                    android:buttonTint="#fff4f4f4"
+                    android:textAllCaps="true"
+                    android:text="Yes"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_darkgrey"
+                    android:buttonTint="#fff4f4f4"
+                    android:textAllCaps="true"
+                    android:text="No"/>
+
+                </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/ll_report_send_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_report_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:layout_marginRight="2dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@color/teal_base"
+                    android:text="@string/action_back"/>
+
+                <Button
+                    android:id="@+id/btn_report_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@color/teal_base"
+                    android:text="@string/card_sendreport"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_report_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                android:background="@color/teal_base"
+                android:minHeight="50dp">
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Invio report in corso."/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
